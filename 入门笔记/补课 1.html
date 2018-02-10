@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML><html><head><style id="wiz_custom_css">html, body {font-size: 12pt;}body {font-family: Helvetica, "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei UI", SimSun, SimHei, arial, sans-serif;line-height: 1.6;margin: 0 auto;padding: 20px 16px;padding: 1.25rem 1rem;}h1, h2, h3, h4, h5, h6 {margin:20px 0 10px;margin:1.25rem 0 0.625rem;padding: 0;font-weight: bold;}h1 {font-size:20pt;font-size:1.67rem;}h2 {font-size:18pt;font-size:1.5rem;}h3 {font-size:15pt;font-size:1.25rem;}h4 {font-size:14pt;font-size:1.17rem;}h5 {font-size:12pt;font-size:1rem;}h6 {font-size:12pt;font-size:1rem;color: #777777;margin: 1rem 0;}div, p, ul, ol, dl, li {margin:0;}blockquote, table, pre, code {margin:8px 0;}ul, ol {padding-left:32px;padding-left:2rem;}ol.wiz-list-level1 > li {list-style-type:decimal;}ol.wiz-list-level2 > li {list-style-type:lower-latin;}ol.wiz-list-level3 > li {list-style-type:lower-roman;}blockquote {padding:0 12px;padding:0 0.75rem;}blockquote > :first-child {margin-top:0;}blockquote > :last-child {margin-bottom:0;}img {border:0;max-width:100%;height:auto !important;margin:2px 0;}table {border-collapse:collapse;border:1px solid #bbbbbb;}td, th {padding:4px 8px;border-collapse:collapse;border:1px solid #bbbbbb;min-height:28px;word-break:break-all;box-sizing: border-box;}.wiz-hide {display:none !important;}
+
+
+@media only screen and (-webkit-max-device-width: 1024px), only screen and (-o-max-device-width: 1024px), only screen and (max-device-width: 1024px), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3), only screen and (min-device-pixel-ratio: 3) {
+    html, body {
+        font-size: 17px;
+    }
+
+    body {
+        line-height: 1.7;
+        padding: 0.75rem 0.9375rem;
+        color: #353c47;
+    }
+
+    h1 {
+        font-size: 2.125rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    h3 {
+        font-size: 1.625rem;
+    }
+
+    h4 {
+        font-size: 1.375rem;
+    }
+
+    h5 {
+        font-size: 1.125rem;
+    }
+
+    h6 {
+        color: inherit;
+    }
+
+    ul, ol {
+        padding-left: 2.5rem;
+    }
+
+    blockquote {
+        padding: 0 0.9375rem;
+    }
+}
+
+html, body {
+    font-family:Helvetica Neue;
+    font-size:15px;
+    background-color:#FFFFFF;
+}</style></head><body class="" ><p>一、进制转换<br></p><p><br></p><p>9876543210<br></p><p>1010101011<br></p><p>=1*2^9+0*2^8+2^7....+1*2^0<br></p><p><br></p><p>56<br></p><p>28 0<br></p><p>14 0<br></p><p>7&nbsp; 0<br></p><p>3&nbsp; 1<br></p><p>1&nbsp; 1<br></p><p>0&nbsp; 1<br></p><p><br></p><p>111000<br></p><p>1*2^5+1*2^4+1*2^3+0*2^2+0*2^1+0*2^0<br></p><p><br></p><p><br></p><p><br></p><p>0.56&nbsp; = 0.1B = 1*2^-1 = 0.5<br></p><p>0.12&nbsp; 1<br></p><p>0.24&nbsp; 0<br></p><p>0.48&nbsp; 0<br></p><p>0.96&nbsp; 0<br></p><p>0.92&nbsp; 1<br></p><p><br></p><p><br></p><p>562<br></p><p>=5*8^2+6*8^1+2*8^0<br></p><p><br></p><p>0.12<br></p><p>=1*8^-1+2*8^-2<br></p><p><br></p><p><br></p><p>123&nbsp; = 173<br></p><p>15&nbsp; 3<br></p><p>1&nbsp;  7<br></p><p>0&nbsp;  1<br></p><p><br></p><p>0.56D = 0.43o<br></p><p>0.48&nbsp; 4<br></p><p>0.84&nbsp; 3<br></p><p><br></p><p><br></p><p>12H = 1*16^1+2*16^0 = 18D<br></p><p>0.12H =1*16^-1+2*16^-2<br></p><p><br></p><p><br></p><p>56D = 38H<br></p><p>3&nbsp; 8<br></p><p>0&nbsp; 3<br></p><p><br></p><p>0.13D = 0.21H<br></p><p>0.08&nbsp; 2<br></p><p>0.26&nbsp; 1<br></p><p><br></p><p><br></p><p>x进制转10进制<br></p><p><br></p><p>对应位数a上的数字b = b*X^a<br></p><p><br></p><p>位：3210-123<br></p><p>数：abcd.efg<br></p><p><br></p><p>转10进制：=a*x^3+b*x^2+c*x^1+d*x^0+e*x^-1+f*x^-2+g*x-3<br></p><p><br></p><p>10进制转X进制<br></p><p><br></p><p>123456<br></p><p>整数：除x取余，从下向上读<br></p><p>小数：乘x取整，取到要求的小数点位数即可<br></p><p><br></p><p><br></p><p>8 16和2进制的互转<br></p><p><br></p><p><br></p><p>0：000<br></p><p>1：001<br></p><p>2：010<br></p><p>3：011<br></p><p>4：100<br></p><p>5：101<br></p><p>6：110<br></p><p>7：111<br></p><p><br></p><p>八进制：5614<br></p><p>转2进制的过程：<br></p><p>把每个数字都拆成3个2进制数<br></p><p>5：101<br></p><p>6：110<br></p><p>1：001<br></p><p>4：100<br></p><p><br></p><p>5614转2进制 = 101110001100<br></p><p><br></p><p>2进制转8进制：3个2进制数组成1个8进制数<br></p><p>11011010<br></p><p>从0位到高位3个1组，不够的高位补0凑够3个：<br></p><p>011 011 010<br></p><p>3&nbsp;  3&nbsp;  2 = 332o<br></p><p><br></p><p><br></p><p><br></p><p>16进制和2进制互转<br></p><p>&nbsp;  8421<br></p><p>0：0000<br></p><p>1：0001<br></p><p>2：0010<br></p><p>3：0011<br></p><p>4：0100<br></p><p>5：0101<br></p><p>6：0110<br></p><p>7：0111<br></p><p>8：1000<br></p><p>9：1001<br></p><p>A：1010<br></p><p>B：1011<br></p><p>C：1100<br></p><p>D：1101<br></p><p>E：1110<br></p><p>F：1111<br></p><p><br></p><p><br></p><p>16进制转2进制，把每1个16进制数拆成4个2进制数：<br></p><p><br></p><p>9&nbsp; &nbsp;  8&nbsp; &nbsp; &nbsp; A&nbsp; &nbsp;  D&nbsp; &nbsp; C：<br></p><p>1001&nbsp; 1000&nbsp;  1010&nbsp; 1101 1100<br></p><p>2进制数：<br></p><p>10011000101011011100<br></p><p><br></p><p>2进制转16进制：<br></p><p>从0位到高位，4个2进制数1组，不够补0<br></p><p>0001 1011 1110 0010&nbsp; 1010<br></p><p>1&nbsp; &nbsp; B&nbsp; &nbsp; E&nbsp; &nbsp; 2&nbsp; &nbsp;  A<br></p><p>1BE2A<br></p><p><br></p><p><br></p><p>2、原码反码补码<br></p><p><br></p><p>正数：原码反码补码都一样<br></p><p><br></p><p>12（H） = =10010（B）<br></p><p>原：10010<br></p><p>反：10010<br></p><p>补：10010<br></p><p><br></p><p>负数：符号位不变<br></p><p>原码：2进制数<br></p><p>反码：对应位取反，0变1&nbsp; 1变0<br></p><p>补码：反码加1<br></p><p>原：<br></p><p>1字节数<br></p><p>-12（H） = 10010010<br></p><p>2字节数<br></p><p>-12（H） = 10000000 00010010<br></p><p>反：<br></p><p>1字节数<br></p><p>-12（H） = 10010010<br></p><p>取反：&nbsp; &nbsp;  11101101<br></p><p>2字节数<br></p><p>-12（H） = 10000000 00010010<br></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  11111111 11101101<br></p><p>补：反码+1<br></p><p>1字节数<br></p><p>-12（H） = 10010010<br></p><p>取反：&nbsp; &nbsp;  11101101<br></p><p>补：&nbsp; &nbsp; &nbsp;  11101110<br></p><p><br></p><p><br></p><p>二、变量类型<br></p><p><br></p><p>char 0~255<br></p><p>short 0~2^16-1<br></p><p>int<br></p><p>float<br></p><p>double<br></p><p><br></p><p><br></p><p>三、运算符<br></p><p>一般：单目 &gt; 双目 &gt;三目<br></p><p>部分特殊：？：&gt; 赋值 <br></p><p>// 优先级顺序 <br></p><p>圆方括号: ()&nbsp; []<br></p><p>箭头减句号：-&gt;&nbsp; 。-(负号)<br></p><p>自增自减非反负：++ -- ！~ -<br></p><p>针强地址长度：* (类型转换) &amp; sizeof<br></p><p>乘除加减再位移：* / + - &gt;&gt; &lt;&lt;<br></p><p>小等大等等等不等：&lt;= &gt;= == !=<br></p><p>8位与 7位异 6位或： &amp; ^ |<br></p><p>5与 4或 3疑 2赋 1真逗： &amp;&amp; || ？： = += -= /= *=&nbsp; ，<br></p><p><br></p><p>结合性：左结合<br></p><p>特殊右结合：-负号&nbsp; ?:三目&nbsp; =赋值<br></p><p><br></p><p><br></p><p>位运算(&amp;、^、|、~)和逻辑运算(&amp;&amp;,||,!)的区别：<br></p><p>位运算的结果：不确定<br></p><p>逻辑运算的结果：确定 真 假<br></p><p>&amp;：&nbsp; 1011 &amp; 0101 = 0001<br></p><p>&nbsp; &nbsp;  0101<br></p><p>&nbsp; &nbsp;  0001<br></p><p>^：&nbsp; 1011 ^ 0101 = 1110&nbsp; 相同为0相异为1<br></p><p>&nbsp; &nbsp;  0101<br></p><p>&nbsp; &nbsp;  1110<br></p><p>|：&nbsp; 1011 | 0101 = 1111<br></p><p>&nbsp; &nbsp;  0101<br></p><p>&nbsp; &nbsp;  1111<br></p><p><br></p><p>按位与操作，一般用来把某个数的某位置0：<br></p><p>数x的7~15位置0：<br></p><p>5678h &amp; 00eFh<br></p><p><br></p><p>&nbsp;  5678&nbsp;  0101 0110 0&nbsp; 111 1000<br></p><p>&amp;&nbsp; 007F&nbsp;  0000 0000 0&nbsp; 111 1111<br></p><p><br></p><p><br></p><p>按位或|：数x的7~15位置1：<br></p><p> XXXX11010111xxxxxxxxx<br></p><p>|000011111111000000000<br></p><p><br></p><p><br></p><p>按位异或：<br></p><p>1与任何数异或取反<br></p><p>1^1 = 0<br></p><p>1^0 = 1<br></p><p>0与任何数异或：不变<br></p><p>0^1 = 1<br></p><p>0^0 = 0<br></p><p>按位异或^：数x的7~15位取反：<br></p><p> XXXX11010111xxxxxxxxx<br></p><p>^000011111111000000000<br></p><p><br></p><p>逻辑运算：<br></p><p>逻辑与：全真为真<br></p><p>1010 &amp;&amp; 0001 = 真<br></p><p>0000 &amp;&amp; 1010 = 假<br></p><p>逻辑或：有真为真<br></p><p>0000 || 1000 = 真<br></p><p><br></p><p>逻辑非：真变假&nbsp; 假变真<br></p><p><br></p><p>位移运算：&gt;&gt; &lt;&lt;<br></p><p><br></p><p>1字节数：<br></p><p>1100 1001<br></p><p>左移：<br></p><p>&lt;&lt;2 : 00 1001 00<br></p><p>高位直接扔&nbsp; 低位补0<br></p><p><br></p><p>右移：<br></p><p>&gt;&gt;2 : 1100 10<br></p><p>低位丢弃：<br></p><p>高位补？：无符号运算：补0<br></p><p>有符号运算：补符号位，符号位是0补0是1补1 丢几个补几个<br></p><p><br></p><p>类型转换：<br></p><p><br></p><p>int a = 0x1234;<br></p><p><br></p><p>char b = (char)a;<br></p><p><br></p><p>int c = b;<br></p><p>char d[] = "1234";<br></p><p><br></p><p>a:0x11223344 : 34 12 00 00 CC CC CC CC <br></p><p>b:0x11223350 : 34 CC CC CC CC CC CC CC<br></p><p>C:0x11224455 : 34 00 00 00 CC CC CC CC<br></p><p>d:0x11222222 : 31 32 33 34 00 CC CC CC <br></p><p>printf("%s",d);<br></p><p>printf("%s",0x11222222)<br></p><p>0x00000034 : 56 87 66 CC .. .. 00<br></p><p>printf("%s",c);<br></p><p>printf("%s",34);<br></p><p><br></p><p><br></p><p><br></p><p>四、一维数组<br></p><p>相同类型的数的集合：<br></p><p>int a,b,c,d;<br></p><p><br></p><p>int arr[4];// 和类型在一起的时候表示长度<br></p><p>//不和类型在一起的时候表示 下标<br></p><p>arr[0] arr[1] arr[2] arr[3]//&nbsp; arr[4] error<br></p><p>// 赋值<br></p><p>1.整体赋值：!!!只能在定义数组的时候赋值<br></p><p>int arr[4] = {1,2,3,4};<br></p><p><br></p><p>// error !<br></p><p>// 没有和类型在一起 arr[4]表示下标为4的元素 <br></p><p>arr[4] = {5，6，7，8};<br></p><p><br></p><p><br></p><p>2、分别赋值&nbsp; 只要不超出下标范围&nbsp; 随便赋值<br></p><p>arr[x] = 1;// int a = 12; a = 4;<br></p><p><br></p><p>// 字符数组：<br></p><p><br></p><p>char arr[] = "12345";<br></p><p><br></p><p>char arr[] = {"12345"};<br></p><p><br></p><p><br></p><p>char arr[] = {31,32,33,'4','5'};<br></p><p><br></p><p><br></p><p>char arr[10] = {"12345"};<br></p><p>char arr[10] = "12345";<br></p><p><br></p><p><br></p><p>if(今天下雨)<br></p><p>&nbsp;  宅家里;<br></p><p>else<br></p><p>&nbsp;  出去浪;<br></p><p><br></p><p>今天下雨？宅家里 ：出去浪;<br></p></body></html>
